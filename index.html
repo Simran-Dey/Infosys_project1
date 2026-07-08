@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpsAgent - Agentic Facility Operations AI Platform</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated background grid and ambient light spots -->
+    <div class="bg-glow-spot spot-1"></div>
+    <div class="bg-glow-spot spot-2"></div>
+    <div class="bg-glow-spot spot-3"></div>
+    <div class="bg-grid-overlay"></div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo-area">
+                <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 3L27.2583 9.5V22.5L16 29L4.74167 22.5V9.5L16 3Z" stroke="url(#logo-grad)" stroke-width="2.5" stroke-linejoin="round"/>
+                    <path d="M16 8L22.9282 12V20L16 24L9.0718 20V12L16 8Z" fill="url(#logo-grad-inner)" opacity="0.8"/>
+                    <circle cx="16" cy="16" r="3" fill="#fff"/>
+                    <defs>
+                        <linearGradient id="logo-grad" x1="4" y1="3" x2="28" y2="29" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#6366f1"/>
+                            <stop offset="1" stop-color="#a855f7"/>
+                        </linearGradient>
+                        <linearGradient id="logo-grad-inner" x1="9" y1="8" x2="23" y2="24" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#818cf8"/>
+                            <stop offset="1" stop-color="#c084fc"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="logo-text">
+                    <span class="brand-name">OpsAgent</span>
+                    <span class="brand-sub">Agentic Facility Ops AI Platform</span>
+                </div>
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#steps" class="nav-link">How it Works</a>
+                <a href="#stats" class="nav-link">Impact</a>
+                <a href="#" class="nav-link help-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    Need help?
+                </a>
+            </nav>
+            <div class="header-cta">
+                <a href="dashboard.html" class="btn btn-secondary nav-btn">Launch Dashboard</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge-glow">
+                    <span class="badge-dot"></span>
+                    <span>Next-Gen Autonomous Operations</span>
+                </div>
+                <h1 class="hero-title">
+                    Get started with <br><span class="text-gradient">OpsAgent</span>
+                </h1>
+                <p class="hero-description">
+                    Set up your workspace in a few simple steps and let autonomous AI agents coordinate, optimize, and secure your facility operations around the clock.
+                </p>
+                <div class="hero-actions">
+                    <a href="dashboard.html" class="btn btn-primary btn-glow">
+                        Let's get started
+                        <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <span class="action-subtext">Takes ~5 minutes</span>
+                </div>
+                <!-- Trust Badge -->
+                <div class="trust-badge">
+                    <svg class="shield-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                    <span>Your data is secure and never shared. You're in control at every step.</span>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="visual-glass-card">
+                    <!-- High-fidelity agent network SVG illustration -->
+                    <svg class="agent-network-svg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Connecting Ring Grid -->
+                        <circle cx="200" cy="200" r="130" stroke="#4f46e5" stroke-width="1" stroke-dasharray="6 6" opacity="0.3"/>
+                        <circle cx="200" cy="200" r="160" stroke="#818cf8" stroke-width="1" stroke-dasharray="10 6" opacity="0.15"/>
+                        <circle cx="200" cy="200" r="80" stroke="#a855f7" stroke-width="1.5" opacity="0.2"/>
+
+                        <!-- Central Glow Portal -->
+                        <g class="pulse-glow">
+                            <circle cx="200" cy="200" r="45" fill="url(#central-portal-glow)" opacity="0.45"/>
+                            <circle cx="200" cy="200" r="35" fill="url(#central-grad)" />
+                        </g>
+
+                        <!-- Agent Node 1: Energy (Top Left) -->
+                        <g class="agent-node node-energy" transform="translate(100, 110)">
+                            <circle cx="0" cy="0" r="30" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" stroke-width="2" class="node-ring"/>
+                            <circle cx="0" cy="0" r="24" fill="#061f18" />
+                            <!-- Energy Lightning SVG Icon -->
+                            <path d="M0 -10 L-6 2 L2 2 L-2 10 L6 -2 L-2 -2 Z" fill="#10b981"/>
+                            <text x="0" y="42" text-anchor="middle" fill="#9ca3af" font-size="11" font-family="Inter" font-weight="500">Energy Agent</text>
+                        </g>
+
+                        <!-- Agent Node 2: Maintenance (Top Right) -->
+                        <g class="agent-node node-maint" transform="translate(300, 110)">
+                            <circle cx="0" cy="0" r="30" fill="rgba(59, 130, 246, 0.1)" stroke="#3b82f6" stroke-width="2" class="node-ring"/>
+                            <circle cx="0" cy="0" r="24" fill="#0b1c3a" />
+                            <!-- Wrench Icon -->
+                            <path d="M-6 -6 C-9 -3 -9 2 -6 5 C-4 7 -1 7 1 5 L6 10 L10 6 L5 1 C7 -1 7 -4 5 -6 C2 -9 -3 -9 -6 -6 Z M-4 -4 C-2 -6 1 -6 3 -4 C5 -2 5 1 3 3 C1 5 -2 5 -4 3 C-6 1 -6 -2 -4 -4 Z" fill="#3b82f6"/>
+                            <text x="0" y="42" text-anchor="middle" fill="#9ca3af" font-size="11" font-family="Inter" font-weight="500">Maintenance</text>
+                        </g>
+
+                        <!-- Agent Node 3: Occupancy (Bottom Left) -->
+                        <g class="agent-node node-occupancy" transform="translate(100, 290)">
+                            <circle cx="0" cy="0" r="30" fill="rgba(245, 158, 11, 0.1)" stroke="#f59e0b" stroke-width="2" class="node-ring"/>
+                            <circle cx="0" cy="0" r="24" fill="#2c1a04" />
+                            <!-- People/Occupancy Icon -->
+                            <path d="M-5 -2 C-5 -5 -1 -6 0 -6 C1 -6 5 -5 5 -2 C5 1 1 2 0 2 C-1 2 -5 1 -5 -2 Z M0 3 C-4 3 -8 5 -8 8 L8 8 C8 5 4 3 0 3 Z" fill="#f59e0b"/>
+                            <text x="0" y="42" text-anchor="middle" fill="#9ca3af" font-size="11" font-family="Inter" font-weight="500">Occupancy</text>
+                        </g>
+
+                        <!-- Agent Node 4: Security (Bottom Right) -->
+                        <g class="agent-node node-security" transform="translate(300, 290)">
+                            <circle cx="0" cy="0" r="30" fill="rgba(139, 92, 246, 0.1)" stroke="#8b5cf6" stroke-width="2" class="node-ring"/>
+                            <circle cx="0" cy="0" r="24" fill="#200f3c" />
+                            <!-- Shield Icon -->
+                            <path d="M-7 -8 L0 -11 L7 -8 V-2 C7 3 2 8 0 9 C-2 8 -7 3 -7 -2 V-8 Z" fill="#8b5cf6"/>
+                            <text x="0" y="42" text-anchor="middle" fill="#9ca3af" font-size="11" font-family="Inter" font-weight="500">Security</text>
+                        </g>
+
+                        <!-- Animated Data Lines linking nodes to portal -->
+                        <path d="M100 110 L165 175" stroke="url(#line-energy)" stroke-width="2" class="connecting-line"/>
+                        <path d="M300 110 L235 175" stroke="url(#line-maint)" stroke-width="2" class="connecting-line"/>
+                        <path d="M100 290 L165 225" stroke="url(#line-occupancy)" stroke-width="2" class="connecting-line"/>
+                        <path d="M300 290 L235 225" stroke="url(#line-security)" stroke-width="2" class="connecting-line"/>
+
+                        <!-- Definitions -->
+                        <defs>
+                            <radialGradient id="central-portal-glow" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" stop-color="#818cf8" stop-opacity="0.8"/>
+                                <stop offset="100%" stop-color="#4f46e5" stop-opacity="0"/>
+                            </radialGradient>
+                            <linearGradient id="central-grad" x1="165" y1="165" x2="235" y2="235" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#6366f1"/>
+                                <stop offset="1" stop-color="#a855f7"/>
+                            </linearGradient>
+                            
+                            <linearGradient id="line-energy" x1="100" y1="110" x2="165" y2="175">
+                                <stop stop-color="#10b981"/>
+                                <stop offset="1" stop-color="#6366f1"/>
+                            </linearGradient>
+                            <linearGradient id="line-maint" x1="300" y1="110" x2="235" y2="175">
+                                <stop stop-color="#3b82f6"/>
+                                <stop offset="1" stop-color="#6366f1"/>
+                            </linearGradient>
+                            <linearGradient id="line-occupancy" x1="100" y1="290" x2="165" y2="225">
+                                <stop stop-color="#f59e0b"/>
+                                <stop offset="1" stop-color="#a855f7"/>
+                            </linearGradient>
+                            <linearGradient id="line-security" x1="300" y1="290" x2="235" y2="225">
+                                <stop stop-color="#8b5cf6"/>
+                                <stop offset="1" stop-color="#a855f7"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                    <!-- Orbiting Nodes overlay -->
+                    <div class="visual-badge b-1">
+                        <span class="badge-icon green">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                        </span>
+                        <span>+12.4% Efficiency</span>
+                    </div>
+                    <div class="visual-badge b-2">
+                        <span class="badge-icon orange">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                        </span>
+                        <span>18.7% Energy Saved</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3 class="stat-num">12.4%</h3>
+                    <p class="stat-lbl">Average Efficiency Gain</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-num">18.7%</h3>
+                    <p class="stat-lbl">Monthly Energy Savings</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-num">₹2.45L</h3>
+                    <p class="stat-lbl">Average Monthly Cost Savings</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-num">92%</h3>
+                    <p class="stat-lbl">MTBF (Reliability) Improvement</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Step Guide Section -->
+    <section class="steps-section" id="steps">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Start in 3 simple steps</h2>
+                <div class="section-title-bar"></div>
+            </div>
+            
+            <div class="steps-grid">
+                <!-- Step 1 -->
+                <div class="step-card">
+                    <div class="step-header-row">
+                        <div class="step-num">1</div>
+                        <div class="step-line"></div>
+                    </div>
+                    <div class="step-icon-wrapper purple">
+                        <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="4" y="2" width="16" height="20" rx="2" ry="2"/>
+                            <line x1="9" y1="22" x2="9" y2="16"/>
+                            <line x1="15" y1="22" x2="15" y2="16"/>
+                            <line x1="9" y1="16" x2="15" y2="16"/>
+                            <path d="M8 6h.01M16 6h.01M8 10h.01M16 10h.01M12 6h.01M12 10h.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="step-card-title">Add your organization</h3>
+                    <p class="step-card-text">Tell us about your organization, campuses, and physical facilities structure.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step-card">
+                    <div class="step-header-row">
+                        <div class="step-num">2</div>
+                        <div class="step-line"></div>
+                    </div>
+                    <div class="step-icon-wrapper green">
+                        <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                            <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/>
+                        </svg>
+                    </div>
+                    <h3 class="step-card-title">Connect your data</h3>
+                    <p class="step-card-text">Integrate your existing hardware, building management networks, and legacy workflows.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step-card">
+                    <div class="step-header-row">
+                        <div class="step-num">3</div>
+                    </div>
+                    <div class="step-icon-wrapper blue">
+                        <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="10" rx="2"/>
+                            <circle cx="12" cy="5" r="2"/>
+                            <path d="M12 7v4M8 8h8"/>
+                        </svg>
+                    </div>
+                    <h3 class="step-card-title">Activate AI agents</h3>
+                    <p class="step-card-text">Select specialized modules, assign operation thresholds, and let AI coordinate optimization.</p>
+                </div>
+            </div>
+            
+            <div class="steps-cta">
+                <a href="dashboard.html" class="btn btn-primary btn-glow">Let's get started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Showcase -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Autonomous Agent Capabilities</h2>
+                <p class="section-subtitle">A synchronized workforce operating in real-time across four crucial facility dimensions.</p>
+                <div class="section-title-bar"></div>
+            </div>
+            
+            <div class="features-grid">
+                <!-- Card 1 -->
+                <div class="feature-glass-card">
+                    <div class="feature-glow-indicator energy"></div>
+                    <div class="feature-icon energy">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    </div>
+                    <h3 class="feature-title">Energy Optimizer</h3>
+                    <p class="feature-desc">Dynamically scales climate control, brightness levels, and mechanical operations based on localized tariff pricing and sensor matrices.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="feature-glass-card">
+                    <div class="feature-glow-indicator maintenance"></div>
+                    <div class="feature-icon maintenance">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                    </div>
+                    <h3 class="feature-title">Predictive Maintenance</h3>
+                    <p class="feature-desc">Detects anomalous vibrations, temperature spikes, or power draws to trigger automated repair dispatches prior to secondary system failure.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="feature-glass-card">
+                    <div class="feature-glow-indicator occupancy"></div>
+                    <div class="feature-icon occupancy">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3 class="feature-title">Occupancy Coordinator</h3>
+                    <p class="feature-desc">Reconfigures dynamic office layouts, books conference facilities, and generates real-time safety heatmaps to maximize active real estate utility.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="feature-glass-card">
+                    <div class="feature-glow-indicator security"></div>
+                    <div class="feature-icon security">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    </div>
+                    <h3 class="feature-title">Intelligent Security</h3>
+                    <p class="feature-desc">Oversees perimeter streams and identity locks. Recognizes security deviations, fire hazards, or forced breaches, acting automatically to protect life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo-area">
+                    <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 3L27.2583 9.5V22.5L16 29L4.74167 22.5V9.5L16 3Z" stroke="url(#logo-grad-f)" stroke-width="2.5" stroke-linejoin="round"/>
+                        <path d="M16 8L22.9282 12V20L16 24L9.0718 20V12L16 8Z" fill="url(#logo-grad-f-inner)" opacity="0.8"/>
+                        <circle cx="16" cy="16" r="3" fill="#fff"/>
+                        <defs>
+                            <linearGradient id="logo-grad-f" x1="4" y1="3" x2="28" y2="29" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#6366f1"/>
+                                <stop offset="1" stop-color="#a855f7"/>
+                            </linearGradient>
+                            <linearGradient id="logo-grad-f-inner" x1="9" y1="8" x2="23" y2="24" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#818cf8"/>
+                                <stop offset="1" stop-color="#c084fc"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span class="logo-text brand-name">OpsAgent</span>
+                </div>
+                <p class="footer-tagline">Autonomous agentic intelligence to modernize and synchronize facility operations.</p>
+                <div class="system-status">
+                    <span class="status-dot pulsing"></span>
+                    <span>All Agent Nodes Operational</span>
+                </div>
+            </div>
+
+            <div class="footer-links-group">
+                <div class="footer-links-col">
+                    <h4>Platform</h4>
+                    <a href="#features">AI Agents</a>
+                    <a href="#steps">Orchestration</a>
+                    <a href="#stats">Performance</a>
+                    <a href="dashboard.html">System Dashboard</a>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Resources</h4>
+                    <a href="#">Security Policy</a>
+                    <a href="#">System Status</a>
+                    <a href="#">API Integrations</a>
+                    <a href="#">Documentation</a>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Contact</h4>
+                    <a href="#">Support Portal</a>
+                    <a href="#">Sales Inquiries</a>
+                    <span class="footer-address">
+                        Head Office Hub<br>
+                        Sector 5, Technology Plaza
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 OpsAgent. All rights reserved. Built for agentic facility operations.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
