@@ -79,7 +79,7 @@ Infosys_project1-main/
 ## 👥 Team Members
 
 - Simran Dey
-- Preethi S · Rakshnavi P · Simran Dey · Tanishka Sahil · Veera Lakshmi Malladi
+- Preethi S · Rakshnavi P · Tanishka Sahil · Veera Lakshmi Malladi
 
 ---
 
